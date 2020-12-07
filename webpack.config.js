@@ -28,6 +28,9 @@ module.exports = {
   plugins:
     [
       new MiniCssExtractPlugin({ filename: 'styles.css' }),
-      new HtmlWebpackPlugin()
-    ]
+      new HtmlWebpackPlugin({template: './src/index.html'})
+    ],
+  devServer: {
+    port: 9000
+  }
 };
